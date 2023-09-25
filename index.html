@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="scss/style.css" type="text/css" rel="scss/style.css">
+  <title>Drag and Drop - Multiple Draggables</title>
+  <link rel="stylesheet" href="scss/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <button class="btn btn-outline-primary mx-3" type="button">Log In</button>
+         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button">Register</button>
+         </div>
+     <div class="navbar">
+      <div class="container">
+        <div class="center">
+         <a href="about-us.html">About us</a>
+         <a class="active" href="index.html">All Products</a>
+         <a href="products/single-products.html">Web Design Portfolio</a>
+         <a href="#">Blog</a>
+        <a href="#">Search</a>
+        <a href="contuct-us.html">Contuct Us</a>
+      </div>
+      </div>
+     </div>
+  <h1>Drag and Drop</h1>
+  <h2>Multiple Draggables</h2>
+  <div class="container">
+    <div id="d-1" class="draggable" draggable="true">DRAGGABLE ELEMENT 1</div>
+    <div id="d-2" class="draggable" draggable="true">DRAGGABLE ELEMENT 2</div>
+    <div id="d-3" class="draggable" draggable="true">DRAGGABLE ELEMENT 3</div>
+    <div class="dropzone drop-container">
+      <p class="dropzone-placeholder">DRAG ELEMENTS HERE</p>
+    </div>
+  </div>
+  <div id="parent">
+    <div id="existing"> Testing</div>
+  </div>
+  <!--<div id="parent">
+    <div id="first-child-element">Testing Testing</div>
+
+    <div id="second-child-element">Testing again </div>
+  </div>-->
+  <div class="modal" tabindex="-1" id="exampleModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Subscribe here</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Full name">
+            <label for="floatingInput">Last Name First Name</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email</label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button data-bs-dismiss="modal" type="button" class="btn btn-primary">Subscribe</button>
+        </div>
+      </div>
+      </div>
+    </div>
+
+  <script type="text/javascript" src="bootstrap.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="javascript/scrtipt.js"></script>
+</body>
+</html>
