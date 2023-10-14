@@ -7,14 +7,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="scss/style.css" type="text/css" rel="scss/style.css">
-  <title>Drag and Drop - Multiple Draggables</title>
+  <title>Drag and Drop - Quiz</title>
   <link rel="stylesheet" href="scss/style.css">
+  <link rel="stylesheet" href="scss/projects.css">
 </head>
 <body>
   <div class="wrapper">
-    <button class="btn btn-outline-primary mx-3" type="button">Log In</button>
          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button">Register</button>
-         </div>
+        </div>
      <div class="navbar">
       <div class="container">
         <div class="center">
@@ -27,24 +27,44 @@
       </div>
       </div>
      </div>
-  <h1>Drag and Drop</h1>
-  <h2>Multiple Draggables</h2>
+  <h1>What was the name of the first ever German Shepherd actor?</h1>
+  <h2>1. Click on the button to select your answer. 
+    2. Drag the answer into the backet below. 
+    3. Press submit button. 
+    4. The answer will be reveiled to you...Make your choice!</h2>
   <div class="container">
-    <div id="d-1" class="draggable" draggable="true">DRAGGABLE ELEMENT 1</div>
-    <div id="d-2" class="draggable" draggable="true">DRAGGABLE ELEMENT 2</div>
-    <div id="d-3" class="draggable" draggable="true">DRAGGABLE ELEMENT 3</div>
+    <div id="d-1" class="draggable" draggable="true">
+      <input type="radio" name="answer" value="a" id="a">
+            <label for="a">a) Rin Tin Tint</label><br>
+    </div>
+    <div id="d-2" class="draggable" draggable="true">
+        <input type="radio" name="answer" value="b" id="b">
+        <label for="b">b) Koton</label>
+    </div>
+    <div id="d-2" class="draggable" draggable="true">
+      <input type="radio" name="answer" value="c" id="c">
+            <label for="c">c) Etzel von Oeringen</label>
+  </div>
+    <div id="d-3" class="draggable" draggable="true">
+      <input type="radio" name="answer" value="d" id="d">
+            <label for="d">d) Lady Jule</label>
+    </div>
     <div class="dropzone drop-container">
-      <p class="dropzone-placeholder">DRAG ELEMENTS HERE</p>
+      <img src="media/280px-Trimble-Strongheart-1921.jpg" alt="Best Actor">
+      <p class="dropzone-placeholder">Drag your answers here!</p>
     </div>
   </div>
-  <div id="parent">
-    <div id="existing"> Testing</div>
-  </div>
-  <!--<div id="parent">
-    <div id="first-child-element">Testing Testing</div>
-
-    <div id="second-child-element">Testing again </div>
-  </div>-->
+  <div class="container">
+    <button class="myButton" onclick="checkAnswer()">Submit</button>
+    <div id="feedback">
+    <div id="myDiv">Answer will appear here!</div>
+    </div>
+    </div>
+  <!--Set of questions #2-->
+  <h1><strong>A famous GDS actor who was killed in a line of duty while working for police.</strong> </h1>
+             <p>Did you know that Koton (or Rondo) was a German Shepherd dog who was fatally shot while trying to apprehend a suspect in the murder of a police officer. He was also a famous actor who played in the 1989 movie K-9 with James Belushi!
+            </p> 
+  <!---->
   <div class="modal" tabindex="-1" id="exampleModal">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -63,15 +83,18 @@
           </div>
         </div>
         <div class="modal-footer">
+          <img src="media/LeoTeddy.JPEG" alt="Best Actor" class=".image">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           <button data-bs-dismiss="modal" type="button" class="btn btn-primary">Subscribe</button>
         </div>
       </div>
       </div>
     </div>
-
-  <script type="text/javascript" src="bootstrap.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="bootstrap.js"></script>
   <script src="javascript/scrtipt.js"></script>
+  <script src="javascript/quiz.js"></script>
+  
 </body>
 </html>
