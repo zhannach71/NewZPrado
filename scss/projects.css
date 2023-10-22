@@ -1,6 +1,7 @@
 body {
   padding: 20px;
   font-family: sans-serif;
+  font-weight: bold;
 }
 
 button {
@@ -43,9 +44,10 @@ button:hover {
 #submitButton:hover {
   background-color: #81081a;
   text-align: center;
+  color: white;
 }
 
 .image {
-  width: 5%;
+  width: 100%;
   height: auto;
 }/*# sourceMappingURL=projects.css.map */
