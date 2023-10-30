@@ -59,4 +59,64 @@ h2 {
   max-width: max-content;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.header {
+  grid-area: header;
+  text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 20px;
+    border-style: none;
+    text-shadow: 0 0 3px #d9a5b3, 0 0 5px #ffff;
+    font-weight: bolder;
+  }
+
+h1 {
+  text-align: center;
+    font-weight: bolder;
+    padding: 40px;
+    border-style: none;
+    text-shadow: 0 0 3px #d9a5b3, 0 0 5px #ffff;
+    font-weight: bolder;
+  }
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.wrapper {
+  width: min(100% - 2rem, 1200px);
+  margin-inline: auto;
+}
+.navbar {
+  display: flex;
+  background-color: #f5cccc;
+}
+
+.navbar a {
+  color:  #000;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #1e3d59;
+  color: #ffff;
+}
+
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img {
+  float: right;
+  height: 250px;
+}

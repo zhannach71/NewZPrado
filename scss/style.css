@@ -114,4 +114,17 @@ h2 {
   cursor: move;
   max-width: -moz-max-content;
   max-width: max-content;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  align-items: center;
+  padding: 3rem;
+  background-color: #8c113c;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

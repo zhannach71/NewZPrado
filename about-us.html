@@ -11,12 +11,24 @@
   <a href="products/single-products.html">Go to products page!</a>
 
   <h1></h1>
-    <div class="header">text<br> text<br>text<br>
-  <p> text here</p>
+  <div id="text"></div>
+  <p> </p>
   
-  <p> text here <a href="" target="_blank">  business website</a>
+  <p>  <a href="" target="_blank">  How do you like my clock?</a>
   </p>
- 
-</body>
+  <script>
+  var msg = document.getElementById("text");
+      function clock() {
+          const mydate = new Date();
+          var myIntervalID = setInterval(function () {
+              let v_date = new Date();
+              msg.innerHTML = v_date.getHours() + ":" +
+                               v_date.getMinutes() + ":" +
+                               v_date.getSeconds();
+          }, 1000);
+         setTimeout(function(){clearInterval(myIntervalID);},30000);
+      }
+      clock();
+  </script></body>
 
 </html>
