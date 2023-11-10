@@ -7,7 +7,7 @@ import User from './pages/User'
 import Dashboard from './pages/Dashboard'
 import Profile from './pages/Profile'
 import Settings from './pages/Settings'
-import Posts from './Posts'
+import Posts from './pages/Posts'
 import { useState } from 'react'
 import './App.css'
 
